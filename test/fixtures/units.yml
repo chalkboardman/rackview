@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  ip: MyString
+  u_location: 1
+  lab_rack_id: 1
+
+two:
+  name: MyString
+  ip: MyString
+  u_location: 1
+  lab_rack_id: 1

@@ -1,0 +1,191 @@
+body {
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.form_float, #rack_index {
+	float: left;
+	width: 700px;
+}
+
+#lab_racks_list {
+	float: left;
+	width: 220px;
+}
+
+#lab_rack_details {
+	float: left;
+}
+
+#unit_pictures, #unit_names, #unit_ips, #unit_edit {
+	background-image: -o-linear-gradient(top, rgb(247, 247, 247), rgb(192,192,192));
+	padding: 10px;
+}
+
+#unit_pictures {
+	float: left;
+	width: 181px;
+}
+
+#unit_names {
+	width: 220px;
+	float: left;
+}
+
+#unit_ips {
+	width: 100px;
+	float: left;
+}
+
+#unit_edit {
+	width: 100px;
+  float: left;
+}
+
+.rel_container {
+	position: relative;
+  height: 630px;
+  
+}
+
+#unit_pictures .rel_container {
+	background-image: url("/images/rackbg2.png");
+	background-repeat: no-repeat;
+}
+
+.rel_container p {
+	margin-top: 0px;
+}
+
+.u {
+	position: absolute;
+	left: 0;
+}
+
+.u1 {
+	top: 615px;
+}
+.u2 {
+	top: 600px;
+}
+.u3 {
+	top: 585px;
+}
+.u4 {
+	top: 570px;
+}
+.u5 {
+	top: 555px;
+}
+.u6 {
+	top: 540px;
+}
+.u7 {
+	top: 525px;
+}
+.u8 {
+	top: 510px;
+}
+.u9 {
+	top: 495px;
+}
+.u10 {
+	top: 480px;
+}
+.u11 {
+	top: 465px;
+}
+.u12 {
+	top: 450px;
+}
+.u13 {
+	top: 435px;
+}
+.u14 {
+	top: 420px;
+}
+.u15 {
+	top: 405px;
+}
+.u16 {
+	top: 390px;
+}
+.u17 {
+	top: 375px;
+}
+.u18 {
+	top: 360px;
+}
+.u19 {
+	top: 345px;
+}
+.u20 {
+	top: 330px;
+}
+.u21 {
+	top: 315px;
+}
+.u22 {
+	top: 300px;
+}
+.u23 {
+	top: 285px;
+}
+.u24 {
+	top: 270px;
+}
+.u25 {
+	top: 255px;
+}
+.u26 {
+	top: 240px;
+}
+.u27 {
+	top: 225px;
+}
+.u28 {
+	top: 210px;
+}
+.u29 {
+	top: 195px;
+}
+.u30 {
+	top: 180px;
+}
+.u31 {
+	top: 165px;
+}
+.u32 {
+	top: 150px;
+}
+.u33 {
+	top: 135px;
+}
+.u34 {
+	top: 120px;
+}
+.u35 {
+	top: 105px;
+}
+.u36 {
+	top: 90px;
+}
+.u37 {
+	top: 75px;
+}
+.u38 {
+	top: 60px;
+}
+.u39 {
+	top: 45px;
+}
+.u40 {
+	top: 30px;
+}
+.u41 {
+	top: 15px;
+}
+.u42 {
+	top: 0px;
+}
+

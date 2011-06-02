@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<div id="lab_rack_details">
+<h2><%= @lab_rack.name %></h2>
+<p>
+<%= link_to 'Edit', edit_lab_rack_path(@lab_rack) %> | 
+<%= link_to "Delete", @lab_rack, :confirm => "Are you sure?", :method => :delete %> | 
+<%= link_to "Add New Unit", new_lab_rack_unit_path(@lab_rack) %>
+</p>
+  <div id="unit_pictures">
+    <h3>Rack</h3>
+    <div class="rel_container">
+      <% for unit in @lab_rack.units %>
+        <%= image_tag "/images/server.jpg", :class => "u u#{unit.u_location}", :alt => "" %>
+      <% end %>
+    </div>
+  </div>
+  <div id="unit_names">
+    <h3>Name</h3>
+    <div class="rel_container">
+      <% for unit in @lab_rack.units %>
+        <p class="u u<%= unit.u_location %>"><%= unit.name %></p>
+      <% end %>
+    </div>
+  </div>
+  <div id="unit_ips">
+    <h3>IP</h3>
+    <div class="rel_container">
+      <% for unit in @lab_rack.units %>
+        <p class="u u<%= unit.u_location %>"><%= unit.ip %></p>
+      <% end %>
+    </div>
+  </div>
+  <div id="unit_edit">
+    <h3>Modify</h3>
+    <div class="rel_container">
+      <% for unit in @lab_rack.units %>
+        <p class="u u<%= unit.u_location %>"> 
+        <%= link_to "Edit", edit_lab_rack_unit_path(@lab_rack, unit) %> | 
+        <%= link_to "Delete", [@lab_rack, unit], :confirm => "Are you sure?", :method => :delete %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RackViewAlpha</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <%= content_tag :p, notice, :class => "notice" if notice.present? %>
+  <%= content_tag :p, alert, :class => "alert" if alert.present? %>
+<h1>RackView Alpha</h1>
+<div id="lab_racks_list">
+	<h2>Racks</h2>
+	<ul>
+	<% for rack in LabRack.all %>
+		<li><%= link_to "#{rack.name}", lab_rack_path(rack) %></li>
+	<% end %>
+	</ul>
+  <p><%= link_to "Add New Rack", new_lab_rack_path %></p>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
